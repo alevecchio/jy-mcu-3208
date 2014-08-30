@@ -1,0 +1,76 @@
+##############################################################
+
+#	Author:		Alex Vecchio
+#	Email:		alevecchio @ hotmail.com
+#	Project:	jy-mcu-3208 for Arduino IDE
+#       File:           boards.txt
+#	Date:		14-jul-2014
+#	Version:	v1.0
+
+##############################################################
+
+menu.clock=Clock
+
+jy-mcu-3208.name=jy-mcu-3208
+
+jy-mcu-3208.build.core=arduino:arduino
+jy-mcu-3208.build.board=atmega8
+jy-mcu-3208.build.mcu=atmega8
+jy-mcu-3208.build.variant=mega8
+
+jy-mcu-3208.upload.maximum_size=8192
+jy-mcu-3208.upload.tool=arduino:avrdude
+jy-mcu-3208.upload.protocol=arduino
+jy-mcu-3208.upload.speed=9600
+
+jy-mcu-3208.program.tool=arduino:avrdude
+jy-mcu-3208.program.maximum_size=8192
+jy-mcu-3208.program.protocol=arduino
+
+
+jy-mcu-3208.bootloader.tool=arduino:avrdude
+jy-mcu-3208.bootloader.unlock_bits=0xff
+jy-mcu-3208.bootloader.lock_bits=0xff
+jy-mcu-3208.bootloader.speed=04
+
+##############################################################
+
+jy-mcu-3208.menu.clock.internal1=1 MHz (Internal)
+jy-mcu-3208.menu.clock.internal1.build.f_cpu=1000000L
+jy-mcu-3208.menu.clock.internal1.bootloader.low_fuses=0xE1
+jy-mcu-3208.menu.clock.internal1.bootloader.high_fuses=0xD7
+jy-mcu-3208.menu.clock.internal1.speed=04
+
+##############################################################
+
+jy-mcu-3208.menu.clock.internal2=2 MHz (Internal)
+jy-mcu-3208.menu.clock.internal2.build.f_cpu=2000000L
+jy-mcu-3208.menu.clock.internal2.bootloader.low_fuses=0xE2
+jy-mcu-3208.menu.clock.internal2.bootloader.high_fuses=0xD7
+jy-mcu-3208.menu.clock.internal2.speed=04
+
+##############################################################
+
+jy-mcu-3208.menu.clock.internal4=4 MHz (Internal)
+jy-mcu-3208.menu.clock.internal4.build.f_cpu=4000000L
+jy-mcu-3208.menu.clock.internal4.bootloader.low_fuses=0xE3
+jy-mcu-3208.menu.clock.internal4.bootloader.high_fuses=0xD7
+jy-mcu-3208.menu.clock.internal4.speed=02
+
+##############################################################
+
+jy-mcu-3208.menu.clock.internal8=8 MHz (Internal)
+jy-mcu-3208.menu.clock.internal8.build.f_cpu=8000000L
+jy-mcu-3208.menu.clock.internal8.bootloader.low_fuses=0xE4
+jy-mcu-3208.menu.clock.internal8.bootloader.high_fuses=0xD7
+jy-mcu-3208.menu.clock.internal8.speed=01
+
+##############################################################
+
+jy-mcu-3208.menu.clock.internal16=16 MHz (External)
+jy-mcu-3208.menu.clock.internal16.build.f_cpu=16000000L
+jy-mcu-3208.menu.clock.internal16.bootloader.low_fuses=0xFF
+jy-mcu-3208.menu.clock.internal16.bootloader.high_fuses=0xDF
+jy-mcu-3208.menu.clock.internal16.speed=01
+
+##############################################################
